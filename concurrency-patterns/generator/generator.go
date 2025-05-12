@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	ch := write("Hello, World!")
@@ -16,6 +19,7 @@ func write(text string) <-chan string { // encapsula a chamada para uma goroutin
 	go func() {
 		for {
 			ch <- fmt.Sprintf("Valor recebido: %s", text)
+			time.Sleep(time.Millisecond * 500)
 		}
 	}()
 
