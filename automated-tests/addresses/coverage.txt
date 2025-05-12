@@ -1,0 +1,4 @@
+mode: set
+automated-tests/addresses/addresses.go:9.41,16.19 5 1
+automated-tests/addresses/addresses.go:16.19,18.3 1 1
+automated-tests/addresses/addresses.go:20.2,20.40 1 1
